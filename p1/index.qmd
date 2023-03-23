@@ -1,0 +1,61 @@
+---
+title: |
+  | Universidade Federal da Paraíba
+  | Centro de Ciências Exatas e da Natureza
+  | Departamento de Estatística
+abstract-title: "Instruções"
+abstract: 
+  Prezado discente, ao final da avaliação, você deverá enviar o código C para o
+  o email [**pedro.rafael.marinho@gmail.com**](mailto:pedro.rafael.mariho@gmail.com). No título do email deverá constar o seu nome
+  e sua matrícula. 
+  
+  No script, as respostas devem estar identificando bem as questões. Todos os comentários
+  deverão ser feitos utilizando comentários válidos em C, i.e., deverão utilizar `/**/`. 
+  
+subtitle: |
+  | **1108194 - PROGRAMAÇÃO APLICADA À ESTATÍSTICA**
+  | (Primeira Avaliação)
+author: "**Prof. Dr. Pedro Rafael D. Marinho**"
+date: today
+date-format: "D/MM/YYYY"
+lang: pt
+language: 
+  title-block-author-single: "Professor"
+  title-block-published: "Data da Avaliação"
+format:
+  html:
+    code-link: true
+    toc: true
+    number-sections: false
+    code-copy: true
+    html-math-method: katex
+    code-tools:
+      source: false
+      toggle: false
+      caption: none
+reference-location: margin
+---
+
+<!-- ::: callout-note -->
+
+<!-- # Algumas observações importantes -->
+
+<!-- \ -->
+
+<!-- As soluções que fiz usam unica e exclusivamente conceitos de estruturas de dados de R e funções que encontram-se nos slides. Por motivos óbvios, isso em nada impede que você escolha em utilizar outros conceitos que foram ministrados em sala de aula.\ -->
+
+<!-- \ -->
+
+<!-- Além disso, as soluções que fiz não são as melhores soluções. Existe formas mais elegantes de resolver os problemas. Porém, a ideia aqui é utilizar os conceitos congruentes aos assuntos da primeira avaliação. -->
+
+<!-- 1.  O operador `|>` (operador de pipe) que utilizo nas soluções não são condições necessárias para resolver as questões de prova. Onde tiver `obj |> funcao()` você poderá substituir por `funcao(obj)`; -->
+
+<!-- 2.  A biblioteca `dplyr` que é carregada, por exemplo, na questão 5, onde sugiro que seja feito `library(dplyr)` não era objeto de estudo, i.e., você para resolver as questões não precisava conhecer **NADA** da `dplyr`. O uso dela, aqui, se deve unica e exclusivamente para carregar o conjunto de dados `starwars`. Porém, soluções que utilizaram o `dplyr` são aceitas, haja vista que falei sobre esse pacote em sala de aula; -->
+
+<!-- 3.  Sugiro fortemente que estudem as soluções. -->
+
+<!-- ::: -->
+
+## Questão 1:
+
+*Considere os objetos nome, idade e salario, conforme abaixo:*
