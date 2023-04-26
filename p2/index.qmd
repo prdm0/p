@@ -1,0 +1,118 @@
+---
+title: |
+  | Universidade Federal da Paraíba
+  | Centro de Ciências Exatas e da Natureza
+  | Departamento de Estatística
+abstract-title: "Instruções"
+abstract: 
+  Prezado discente, ao final da avaliação, você deverá enviar o script Python para o
+  o email [**pedro.rafael.marinho@gmail.com**](mailto:pedro.rafael.mariho@gmail.com). No título do email deverá constar o seu nome
+  e sua matrícula. 
+  
+  No script, as respostas devem estar identificando bem as questões. Todos os comentários
+  deverão ser feitos utilizando comentários válidos em Python, i.e., deverão utilizar `#`. 
+  
+subtitle: |
+  | **GDEST0105 - PROGRAMAÇÃO ESTATÍSTICA COM PYTHON**
+  | (Segunda Avaliação)
+author: "**Prof. Dr. Pedro Rafael D. Marinho**"
+date: today
+date-format: "D/MM/YYYY"
+lang: pt
+language: 
+  title-block-author-single: "Professor Dr"
+  title-block-published: "Data da Avaliação"
+format:
+  html:
+    code-link: true
+    toc: true
+    number-sections: false
+    code-copy: true
+    html-math-method: katex
+    code-tools:
+      source: false
+      toggle: false
+      caption: none
+reference-location: margin
+---
+
+::: callout-note
+
+# Definindo uma função em Python
+
+Uma função em Python poderá ser definida por:
+
+```{.python} 
+def nome_da_funcao(parametros):
+  corpo da função
+```
+
+Por exemplo, a função `soma_2`, que recebe dois argumentos e retorna sua soma poderá ser implementada como:
+
+```{python}
+def soma_2(x, y):
+  return(x + y)
+
+# Usando a função
+soma_2(2,5)
+```
+
+**Nota**: Você agora sabe definir uma função em Python e poderá implementar as questões em forma de funções. Note a identação do código para definir o corpo da função. Identação é algo muito importante em Python!
+
+:::
+
+## Questão 1:
+
+*Você foi contratado por uma empresa de vendas online para criar uma função em Python que calcule o desconto a ser aplicado em um determinado produto, com base no seu preço e na sua categoria. Implemente a função `politica_de_desconto(precos, categoria, politicas)`, em que os argumentos `precos`, `categoria` e `politicas` são, respectivamente, uma lista de preços, uma string informando uma categoria de produto (`"exemplo"`, `"roupa"`, `"calcado"`, `"decoracao"`, etc) e um dicionário com as políticas de descontos. O dicionário nas chaves terão os produtos da loja e como valores, os percentuais de descontos. Portanto, sua função deverá calcular o percentual de desconto sobre o argumento `preco`, com base no argumento `categoria` e dicionário, passados para a função.*
+
+## Questão 2:
+
+
+*Imagine que você está desenvolvendo um sistema de gerenciamento de funcionários para uma empresa. Cada funcionário possui um nome, um salário e um departamento. A empresa deseja aplicar um bônus salarial para funcionários de determinados departamentos, de acordo com a seguinte política:*
+
++ *Funcionários do departamento "Vendas" receberão um bônus de 10% sobre o seu salário.*
++ *Funcionários do departamento "Marketing" receberão um bônus de 15% sobre o seu salário.*
++ *Funcionários de outros departamentos não receberão bônus.*
+
+*Para implementar essa política, você deve criar uma função em Python chamada `calcular_bonus` que receba um dicionário contendo as informações de um funcionário (nome, salário e departamento) e retorne o novo salário do funcionário com o bônus aplicado.*
+
+## Questão 3:
+
+*Você recebeu um programa em Python que utiliza instruções `if` e `else` para verificar se uma pessoa é criança, adolescente ou adulto com base na idade e imprimir uma mensagem correspondente na tela. Porém, você precisa reescrever esse programa utilizando a instrução `elif`.*
+
+*O programa original é o seguinte:*
+
+```{.python}
+idade = int(input("Digite a idade da pessoa: "))
+
+if idade < 13:
+    print("A pessoa é criança.")
+else:
+    if idade < 18:
+        print("A pessoa é adolescente.")
+    else:
+        print("A pessoa é adulta.")
+```
+
+*Reescreva esse programa utilizando a instrução `elif` de forma que o resultado seja o mesmo.*
+
+## Questão 4:
+
+*Crie uma função em Python que, dada uma lista de números, informe se ela é simétrica ou não. Uma lista é considerada simétrica se os elementos da lista são iguais quando lidos da esquerda para a direita e da direita para a esquerda.*
+
+*Por exemplo, se a lista for `[1, 2, 3, 2, 1]`, o programa deve imprimir a mensagem `"A lista é simétrica"`. Já se a lista for `[1, 2, 3, 4, 5]`, o programa deve imprimir a mensagem `"A lista não é simétrica"`.*
+
+**Dica**: *Você pode usar a sintaxe de indexação `lista[::-1]` para criar uma lista com os elementos em ordem reversa.*
+
+## Questão 5:
+
+*Escreva um programa que calcule o preço a pagar pelo fornecimento de energia elétrica. Pergunte a quantidade de kWh consumida e o tipo de instalação: R (residencias), I (indústrias) e C (comércios). Calcule o preço a pagar de acordo a Tabela ao lado.*
+
+| Tipo        | Faixa (kWh)   | Preço        |
+|-------------|---------------|--------------|
+| Residencial | Até 500       | $R\$\, 0,40$ |
+|             | Acima de 500  | $R\$\, 0,65$ |
+| Comercial   | Até 1000      | $R\$\, 0,55$ |
+|             | Acima de 1000 | $R\$\, 0,60$ |
+| Industrial  | Até 5000      | $R\$\, 0,55$ |
+|             | Acima de 5000 | $R\$\, 0,60$ |
