@@ -1,0 +1,200 @@
+---
+title: |
+  | Universidade Federal da Paraíba
+  | Centro de Ciências Exatas e da Natureza
+  | Departamento de Estatística
+abstract-title: "Instruções"
+abstract: 
+  Prezado discente, ao final da avaliação, você deverá enviar o código C para o
+  o email [**pedro.rafael.marinho@gmail.com**](mailto:pedro.rafael.mariho@gmail.com). No título do email deverá constar o seu nome
+  e sua matrícula. 
+  
+  No script, as respostas devem estar identificando bem as questões. Todos os comentários
+  deverão ser feitos utilizando comentários válidos em C, i.e., deverão utilizar `/**/`. 
+  
+subtitle: |
+  | **1108194 - PROGRAMAÇÃO APLICADA À ESTATÍSTICA**
+  | (Segunda Avaliação)
+author: "**Prof. Dr. Pedro Rafael D. Marinho**"
+date: today
+date-format: "05/05/2023"
+lang: pt
+language: 
+  title-block-author-single: "Professor"
+  title-block-published: "Data da Avaliação"
+format:
+  html:
+    code-link: true
+    toc: true
+    number-sections: false
+    code-copy: true
+    html-math-method: katex
+    self-contained: true
+    code-tools:
+      source: false
+      toggle: false
+      caption: none
+reference-location: margin
+citation-location: margin
+---
+
+<!-- ::: callout-note -->
+<!-- Você poderá utilizar o conceito de funções, quando achar necessário. Lembre-se, uma função em C é construida como: -->
+
+<!-- ```{.c} -->
+<!-- tipo_de_retorno nome_da_funcao(tipo x, tipo y){ -->
+
+<!--   coinjunto de instrucoes -->
+
+<!--   return(alguma_coisa) -->
+<!-- } -->
+<!-- ```  -->
+
+<!-- Por exemplo, a função `soma_3()` retorna uma número do tipo `double` e recebe três argumentos do tipo `double`, a saber, -->
+<!-- os argumentos `x`, `y` e `z`. -->
+
+<!-- ```{.c} -->
+
+<!-- double soma_tres(double x, double y, double z){ -->
+<!--     double conta; -->
+
+<!--     conta = x + y + z; -->
+
+<!--     return(conta); -->
+<!-- } -->
+
+<!-- ``` -->
+
+<!-- ::: -->
+
+## Questão 1:
+
+Utilizando o conceito de laços/loops, crie um código C que calcula o fatorial de um número inteiro. Considere um inteiro assinado da forma `unsigned long int`. Lembre-se que o fatorial de $n$ é dado por:
+
+$$n! = n \times (n - 1) \times (n - 2) \times \cdots \times 1,$$
+em que $0! = 1$.
+
+
+## Questão 2:
+
+Utilizando o conceito de laços, crie um programa em C que some apenas os números pares da sequência de números inteiros de 1 à 100.
+
+
+## Questão 3:
+
+Utilizando o conceito de laços, crie um código C que dado um valor de $n$ (número de linhas da árvore), o código retornará:
+
+Para `n = 1`:
+```
+*
+```
+
+Para `n = 2`:
+
+```
+*
+*-
+```
+
+Para `n = 3`:
+
+```
+*
+*-
+*-*
+```
+
+O código deverá seguir esse padrão, para todo valor de `n`. Por exemplo, se `n = 10`, o código deverá retornar:
+
+
+```
+*
+*-
+*-*
+*-*-
+*-*-*
+*-*-*-
+*-*-*-*
+*-*-*-*-
+*-*-*-*-*
+*-*-*-*-*-
+```
+
+## Questão 4:
+
+Utilizando o conceito de laços, escreva um programa em C que aproxime o valor de $\mathrm{sin}(x)$, utilizando a série de potência baixo:
+
+$$\mathrm{sin}(x)  \approx \sum_{n = 0}^{N} \frac{(-1)^nx^{2n + 1}}{(2n + 1)!}.$$
+**Nota**: Você deverá escolher um valor de $N$, por exemplo, $N = 5$. Não escolha um valor grande para $N$, para não cair em erros numéricos! Aqui, suficiente uma aproximação com seis termos; $n = 0, 1, 2, 3, 4, 5$.
+
+## Questão 5:
+
+Escreva um programa em C, utilizando o conceito de laços, em que solicite ao usuário uma quantidade $n$ de números reais que serão digitados. Em cada iteração do laço, o programa deverá solicitar um número real ao usuário. Ao fim das $n$ iterações, o programa deverá informar a soma dos números digitados.
+
+
+
+<!-- *Escreva um programa em C que solicite três notas de um aluno e informe a média das três avaliações. Além disso, o programa deverá informar se o aluno foi aprovado, reprovado ou terá direito a fazer uma prova final. Em caso do aluno ir para final, informe quanto ele deverá obter na final para se considerar -->
+<!-- aprovado na disciplina. **Regra**: O aluno será considerado aprovado se tiver a média aritmética das três avaliações maior ou igual à sete. Se a média for menor que 4, o aluno será reprovado sem o direito de fazer o exame final. Já no caso da média aritmética esteja no intervalo $[4,7)$ o aluno poderá fazer um exame final. Nessa última situação, a nota final assumirá peso 4 e a média aritmética das três primeiras avaliações assumirá o peso 6. Se o aluno obter uma média ponderada maior ou igual à 5.0 ele estará aprovado.* -->
+
+
+<!-- ## Questão 2: -->
+
+<!-- *Imagine que você está escrevendo um programa para uma loja que vende camisetas. Cada camiseta tem um preço base, mas o preço final pode variar dependendo do tamanho da camiseta. As camisetas tamanho P têm um desconto de $10\%$ no preço, as camisetas tamanho M têm um desconto de $5\%$ e as camisetas tamanho G não têm desconto. Escreva um programa em C que leia o tamanho da camiseta e o preço base da mesma (preço sem desconto). Em seguida, o programa deve calcular o preço final da camiseta, levando em consideração o desconto de acordo com o tamanho da camiseta. O programa deverá imprimir em tela o preço base, o tamanho da camiseta e o valor final.* -->
+
+<!-- ## Questão 3: -->
+
+<!-- *Você está desenvolvendo um sistema de votação para uma eleição municipal e precisa implementar a lógica de contagem de votos para determinar o resultado final. Nas eleições, existem apenas dois candidatos, a saber João e Maria. Seu programa deverá solicitar o número de votos de João, o número de votos de Maria e o número de votos nulos. O programa deverá retornar as informações preenchidas e o resultado do primeiro turno, que poderá ser:* -->
+
+<!-- 1. *`Resultado: Joao venceu a eleicao!` - caso o candidato João tenha recebido mais votos que a candidata Maria e que a quantidade de votos nulos não ultrapasse $10\%$ do total de votos;* -->
+
+<!-- 2. *`Resultado: Maria venceu a eleicao!` - caso a candidata Maria tenha recebido mais votos que o candidato João e que a quantidade de votos nulos não ultrapasse $10\%$ do total de votos;* -->
+
+<!-- 3. *`Resultado: Haverá segundo turno!` - caso nenhum dos candidatos tenha recebido mais votos que o outro ou caso a quantidade de votos nulos ultrapasse $10\%$ do total de votos.* -->
+
+
+<!-- ::: column-margin -->
+<!-- ***Dica**: O percentual de votos nulos poderá ser obtido fazendo:* -->
+
+<!-- $$\frac{(votosNulos \times 100)}{(votosJoao + votosMaria + votosNulos)}$$ -->
+<!-- ::: -->
+
+<!-- ## Questão 3: -->
+
+<!-- *Um jogador de RPG (Role-Playing Game) está desenvolvendo um sistema para calcular o dano causado por um ataque com uma espada. O sistema deve considerar a força do personagem e a defesa do inimigo para calcular o dano final. A fórmula para calcular o dano encontra-se ao lado.* -->
+
+<!-- ::: column-margin -->
+<!-- *O **dano** é obtido por:* -->
+
+<!-- $$dano = (forca - defesa) * 10$$  -->
+<!-- ::: -->
+
+<!-- *Se o resultado da fórmula for negativo, o dano final deve ser considerado como zero. Além disso, caso a força seja maior que a defesa, o ataque deve ser considerado como um golpe crítico e o dano final deve ser dobrado. O jogador precisa desenvolver um programa em C que recebe a força e a defesa como entrada e exibe os valores de força e defesa informados, além do dano final.* -->
+
+<!-- ## Questão 4: -->
+
+<!-- Um professor de matemática está desenvolvendo um programa para ajudar seus alunos a praticar cálculo de área de figuras geométricas. O programa deve receber como entrada o tipo de figura, da seguinte forma: -->
+
+<!-- + `q` ou `Q` para quadrado; -->
+<!-- + `r` ou `R` para retângulo; -->
+<!-- + `c` ou `C` para circunferência. -->
+
+<!-- ::: column-margin -->
+<!-- A área das figuras podem ser calculadas por: -->
+
+<!-- + **Quadrado**: $A = l^2$; -->
+<!-- + **Retângulo**: $A = b * h$, em que $b$ é a base e $h$ é a altura; -->
+<!-- + **Circunferência**: $A = \pi * r^2$, em que $r$ é o raio. -->
+<!-- ::: -->
+
+
+<!-- Se informado o quadrado e o retângulo, o programa deve receber a medida do lado ou dos lados. Para o círculo, o programa deve receber o raio. O programa deve calcular a área da figura de acordo com o tipo informado e exibir o resultado na tela. -->
+
+
+<!-- ## Questão 5: -->
+
+<!-- *Escreva um programa que leia as medidas dos lados de um triângulo e -->
+<!-- escreva se ele é Equilátero, Isósceles ou Escaleno. Sendo que:* -->
+
+<!-- + ***Triângulo Equilátero**: possui os 3 lados iguais;* -->
+<!-- + ***Triângulo Isóscele**: possui 2 lados iguais;* -->
+<!-- + ***Triângulo Escaleno**: possui 3 lados diferentes.* -->

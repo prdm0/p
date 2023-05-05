@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Prof. Dr. Pedro Rafael D. Marinho">
+<meta name="dcterms.date" content="2023-05-05">
 
-<title>quarto-inputab88ea08</title>
+<title>quarto-input1f85f2e1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -2580,13 +2581,12 @@ vertical-align: -.125em;
   <li><a href="#questão-1" id="toc-questão-1" class="nav-link active" data-scroll-target="#questão-1">Questão 1:</a></li>
   <li><a href="#questão-2" id="toc-questão-2" class="nav-link" data-scroll-target="#questão-2">Questão 2:</a></li>
   <li><a href="#questão-3" id="toc-questão-3" class="nav-link" data-scroll-target="#questão-3">Questão 3:</a></li>
-  <li><a href="#questão-3-1" id="toc-questão-3-1" class="nav-link" data-scroll-target="#questão-3-1">Questão 3:</a></li>
   <li><a href="#questão-4" id="toc-questão-4" class="nav-link" data-scroll-target="#questão-4">Questão 4:</a></li>
   <li><a href="#questão-5" id="toc-questão-5" class="nav-link" data-scroll-target="#questão-5">Questão 5:</a></li>
   </ul>
 </nav>
 </div>
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -2594,7 +2594,7 @@ vertical-align: -.125em;
 Centro de Ciências Exatas e da Natureza<br>
 Departamento de Estatística</p></h1>
 <p class="subtitle lead"></p><p><strong>1108194 - PROGRAMAÇÃO APLICADA À ESTATÍSTICA</strong><br>
-(Primeira Avaliação)</p><p></p>
+(Segunda Avaliação)</p><p></p>
 </div>
 
 
@@ -2611,7 +2611,7 @@ Departamento de Estatística</p></h1>
     <div>
     <div class="quarto-title-meta-heading">Data da Avaliação</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">23/03/2023</p>
+      <p class="date">05/05/2023</p>
     </div>
   </div>
   
@@ -2628,71 +2628,102 @@ Departamento de Estatística</p></h1>
 </header>
 
 <!-- ::: callout-note -->
-<!-- # Algumas observações importantes -->
-<!-- \ -->
-<!-- As soluções que fiz usam unica e exclusivamente conceitos de estruturas de dados de R e funções que encontram-se nos slides. Por motivos óbvios, isso em nada impede que você escolha em utilizar outros conceitos que foram ministrados em sala de aula.\ -->
-<!-- \ -->
-<!-- Além disso, as soluções que fiz não são as melhores soluções. Existe formas mais elegantes de resolver os problemas. Porém, a ideia aqui é utilizar os conceitos congruentes aos assuntos da primeira avaliação. -->
-<!-- 1.  O operador `|>` (operador de pipe) que utilizo nas soluções não são condições necessárias para resolver as questões de prova. Onde tiver `obj |> funcao()` você poderá substituir por `funcao(obj)`; -->
-<!-- 2.  A biblioteca `dplyr` que é carregada, por exemplo, na questão 5, onde sugiro que seja feito `library(dplyr)` não era objeto de estudo, i.e., você para resolver as questões não precisava conhecer **NADA** da `dplyr`. O uso dela, aqui, se deve unica e exclusivamente para carregar o conjunto de dados `starwars`. Porém, soluções que utilizaram o `dplyr` são aceitas, haja vista que falei sobre esse pacote em sala de aula; -->
-<!-- 3.  Sugiro fortemente que estudem as soluções. -->
+<!-- Você poderá utilizar o conceito de funções, quando achar necessário. Lembre-se, uma função em C é construida como: -->
+<!-- ```{.c} -->
+<!-- tipo_de_retorno nome_da_funcao(tipo x, tipo y){ -->
+<!--   coinjunto de instrucoes -->
+<!--   return(alguma_coisa) -->
+<!-- } -->
+<!-- ```  -->
+<!-- Por exemplo, a função `soma_3()` retorna uma número do tipo `double` e recebe três argumentos do tipo `double`, a saber, -->
+<!-- os argumentos `x`, `y` e `z`. -->
+<!-- ```{.c} -->
+<!-- double soma_tres(double x, double y, double z){ -->
+<!--     double conta; -->
+<!--     conta = x + y + z; -->
+<!--     return(conta); -->
+<!-- } -->
+<!-- ``` -->
 <!-- ::: -->
 <section id="questão-1" class="level2">
 <h2 class="anchored" data-anchor-id="questão-1">Questão 1:</h2>
-<p><em>Escreva um programa em C que solicite três notas de um aluno e informe a média das três avaliações. Além disso, o programa deverá informar se o aluno foi aprovado, reprovado ou terá direito a fazer uma prova final. Em caso do aluno ir para final, informe quanto ele deverá obter na final para se considerar aprovado na disciplina. <strong>Regra</strong>: O aluno será considerado aprovado se tiver a média aritmética das três avaliações maior ou igual à sete. Se a média for menor que 4, o aluno será reprovado sem o direito de fazer o exame final. Já no caso da média aritmética esteja no intervalo <span class="math inline">[4,7)</span> o aluno poderá fazer um exame final. Nessa última situação, a nota final assumirá peso 4 e a média aritmética das três primeiras avaliações assumirá o peso 6. Se o aluno obter uma média ponderada maior ou igual à 5.0 ele estará aprovado.</em></p>
+<p>Utilizando o conceito de laços/loops, crie um código C que calcula o fatorial de um número inteiro. Considere um inteiro assinado da forma <code>unsigned long int</code>. Lembre-se que o fatorial de <span class="math inline">n</span> é dado por:</p>
+<p><span class="math display">n! = n \times (n - 1) \times (n - 2) \times \cdots \times 1,</span> em que <span class="math inline">0! = 1</span>.</p>
 </section>
 <section id="questão-2" class="level2">
 <h2 class="anchored" data-anchor-id="questão-2">Questão 2:</h2>
-<p><em>Imagine que você está escrevendo um programa para uma loja que vende camisetas. Cada camiseta tem um preço base, mas o preço final pode variar dependendo do tamanho da camiseta. As camisetas tamanho P têm um desconto de <span class="math inline">10\%</span> no preço, as camisetas tamanho M têm um desconto de <span class="math inline">5\%</span> e as camisetas tamanho G não têm desconto. Escreva um programa em C que leia o tamanho da camiseta e o preço base da mesma (preço sem desconto). Em seguida, o programa deve calcular o preço final da camiseta, levando em consideração o desconto de acordo com o tamanho da camiseta. O programa deverá imprimir em tela o preço base, o tamanho da camiseta e o valor final.</em></p>
+<p>Utilizando o conceito de laços, crie um programa em C que some apenas os números pares da sequência de números inteiros de 1 à 100.</p>
 </section>
-<section id="questão-3" class="level2 page-columns page-full">
+<section id="questão-3" class="level2">
 <h2 class="anchored" data-anchor-id="questão-3">Questão 3:</h2>
-<p><em>Você está desenvolvendo um sistema de votação para uma eleição municipal e precisa implementar a lógica de contagem de votos para determinar o resultado final. Nas eleições, existem apenas dois candidatos, a saber João e Maria. Seu programa deverá solicitar o número de votos de João, o número de votos de Maria e o número de votos nulos. O programa deverá retornar as informações preenchidas e o resultado do primeiro turno, que poderá ser:</em></p>
-<ol type="1">
-<li><p><em><code>Resultado: Joao venceu a eleicao!</code> - caso o candidato João tenha recebido mais votos que a candidata Maria e que a quantidade de votos nulos não ultrapasse <span class="math inline">10\%</span> do total de votos;</em></p></li>
-<li><p><em><code>Resultado: Maria venceu a eleicao!</code> - caso a candidata Maria tenha recebido mais votos que o candidato João e que a quantidade de votos nulos não ultrapasse <span class="math inline">10\%</span> do total de votos;</em></p></li>
-<li><p><em><code>Resultado: Haverá segundo turno!</code> - caso nenhum dos candidatos tenha recebido mais votos que o outro ou caso a quantidade de votos nulos ultrapasse <span class="math inline">10\%</span> do total de votos.</em></p></li>
-</ol>
-
-<div class="no-row-height column-margin column-container"><div class>
-<p><em><strong>Dica</strong>: O percentual de votos nulos poderá ser obtido fazendo:</em></p>
-<p><span class="math display">\frac{(votosNulos \times 100)}{(votosJoao + votosMaria + votosNulos)}</span></p>
-</div></div></section>
-<section id="questão-3-1" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="questão-3-1">Questão 3:</h2>
-<p><em>Um jogador de RPG (Role-Playing Game) está desenvolvendo um sistema para calcular o dano causado por um ataque com uma espada. O sistema deve considerar a força do personagem e a defesa do inimigo para calcular o dano final. A fórmula para calcular o dano encontra-se ao lado.</em></p>
-
-<div class="no-row-height column-margin column-container"><div class>
-<p><em>O <strong>dano</strong> é obtido por:</em></p>
-<p><span class="math display">dano = (forca - defesa) * 10</span></p>
-</div></div><p><em>Se o resultado da fórmula for negativo, o dano final deve ser considerado como zero. Além disso, caso a força seja maior que a defesa, o ataque deve ser considerado como um golpe crítico e o dano final deve ser dobrado. O jogador precisa desenvolver um programa em C que recebe a força e a defesa como entrada e exibe os valores de força e defesa informados, além do dano final.</em></p>
+<p>Utilizando o conceito de laços, crie um código C que dado um valor de <span class="math inline">n</span> (número de linhas da árvore), o código retornará:</p>
+<p>Para <code>n = 1</code>:</p>
+<pre><code>*</code></pre>
+<p>Para <code>n = 2</code>:</p>
+<pre><code>*
+*-</code></pre>
+<p>Para <code>n = 3</code>:</p>
+<pre><code>*
+*-
+*-*</code></pre>
+<p>O código deverá seguir esse padrão, para todo valor de <code>n</code>. Por exemplo, se <code>n = 10</code>, o código deverá retornar:</p>
+<pre><code>*
+*-
+*-*
+*-*-
+*-*-*
+*-*-*-
+*-*-*-*
+*-*-*-*-
+*-*-*-*-*
+*-*-*-*-*-</code></pre>
 </section>
-<section id="questão-4" class="level2 page-columns page-full">
+<section id="questão-4" class="level2">
 <h2 class="anchored" data-anchor-id="questão-4">Questão 4:</h2>
-<p>Um professor de matemática está desenvolvendo um programa para ajudar seus alunos a praticar cálculo de área de figuras geométricas. O programa deve receber como entrada o tipo de figura, da seguinte forma:</p>
-<ul>
-<li><code>q</code> ou <code>Q</code> para quadrado;</li>
-<li><code>r</code> ou <code>R</code> para retângulo;</li>
-<li><code>c</code> ou <code>C</code> para circunferência.</li>
-</ul>
-
-<div class="no-row-height column-margin column-container"><div class>
-<p>A área das figuras podem ser calculadas por:</p>
-<ul>
-<li><strong>Quadrado</strong>: <span class="math inline">A = l^2</span>;</li>
-<li><strong>Retângulo</strong>: <span class="math inline">A = b * h</span>, em que <span class="math inline">b</span> é a base e <span class="math inline">h</span> é a altura;</li>
-<li><strong>Circunferência</strong>: <span class="math inline">A = \pi * r^2</span>, em que <span class="math inline">r</span> é o raio.</li>
-</ul>
-</div></div><p>Se informado o quadrado e o retângulo, o programa deve receber a medida do lado ou dos lados. Para o círculo, o programa deve receber o raio. O programa deve calcular a área da figura de acordo com o tipo informado e exibir o resultado na tela.</p>
+<p>Utilizando o conceito de laços, escreva um programa em C que aproxime o valor de <span class="math inline">\mathrm{sin}(x)</span>, utilizando a série de potência baixo:</p>
+<p><span class="math display">\mathrm{sin}(x)  \approx \sum_{n = 0}^{N} \frac{(-1)^nx^{2n + 1}}{(2n + 1)!}.</span> <strong>Nota</strong>: Você deverá escolher um valor de <span class="math inline">N</span>, por exemplo, <span class="math inline">N = 5</span>. Não escolha um valor grande para <span class="math inline">N</span>, para não cair em erros numéricos! Aqui, suficiente uma aproximação com seis termos; <span class="math inline">n = 0, 1, 2, 3, 4, 5</span>.</p>
 </section>
 <section id="questão-5" class="level2">
 <h2 class="anchored" data-anchor-id="questão-5">Questão 5:</h2>
-<p><em>Escreva um programa que leia as medidas dos lados de um triângulo e escreva se ele é Equilátero, Isósceles ou Escaleno. Sendo que:</em></p>
-<ul>
-<li><em><strong>Triângulo Equilátero</strong>: possui os 3 lados iguais;</em></li>
-<li><em><strong>Triângulo Isóscele</strong>: possui 2 lados iguais;</em></li>
-<li><em><strong>Triângulo Escaleno</strong>: possui 3 lados diferentes.</em></li>
-</ul>
+<p>Escreva um programa em C, utilizando o conceito de laços, em que solicite ao usuário uma quantidade <span class="math inline">n</span> de números reais que serão digitados. Em cada iteração do laço, o programa deverá solicitar um número real ao usuário. Ao fim das <span class="math inline">n</span> iterações, o programa deverá informar a soma dos números digitados.</p>
+<!-- *Escreva um programa em C que solicite três notas de um aluno e informe a média das três avaliações. Além disso, o programa deverá informar se o aluno foi aprovado, reprovado ou terá direito a fazer uma prova final. Em caso do aluno ir para final, informe quanto ele deverá obter na final para se considerar -->
+<!-- aprovado na disciplina. **Regra**: O aluno será considerado aprovado se tiver a média aritmética das três avaliações maior ou igual à sete. Se a média for menor que 4, o aluno será reprovado sem o direito de fazer o exame final. Já no caso da média aritmética esteja no intervalo $[4,7)$ o aluno poderá fazer um exame final. Nessa última situação, a nota final assumirá peso 4 e a média aritmética das três primeiras avaliações assumirá o peso 6. Se o aluno obter uma média ponderada maior ou igual à 5.0 ele estará aprovado.* -->
+<!-- ## Questão 2: -->
+<!-- *Imagine que você está escrevendo um programa para uma loja que vende camisetas. Cada camiseta tem um preço base, mas o preço final pode variar dependendo do tamanho da camiseta. As camisetas tamanho P têm um desconto de $10\%$ no preço, as camisetas tamanho M têm um desconto de $5\%$ e as camisetas tamanho G não têm desconto. Escreva um programa em C que leia o tamanho da camiseta e o preço base da mesma (preço sem desconto). Em seguida, o programa deve calcular o preço final da camiseta, levando em consideração o desconto de acordo com o tamanho da camiseta. O programa deverá imprimir em tela o preço base, o tamanho da camiseta e o valor final.* -->
+<!-- ## Questão 3: -->
+<!-- *Você está desenvolvendo um sistema de votação para uma eleição municipal e precisa implementar a lógica de contagem de votos para determinar o resultado final. Nas eleições, existem apenas dois candidatos, a saber João e Maria. Seu programa deverá solicitar o número de votos de João, o número de votos de Maria e o número de votos nulos. O programa deverá retornar as informações preenchidas e o resultado do primeiro turno, que poderá ser:* -->
+<!-- 1. *`Resultado: Joao venceu a eleicao!` - caso o candidato João tenha recebido mais votos que a candidata Maria e que a quantidade de votos nulos não ultrapasse $10\%$ do total de votos;* -->
+<!-- 2. *`Resultado: Maria venceu a eleicao!` - caso a candidata Maria tenha recebido mais votos que o candidato João e que a quantidade de votos nulos não ultrapasse $10\%$ do total de votos;* -->
+<!-- 3. *`Resultado: Haverá segundo turno!` - caso nenhum dos candidatos tenha recebido mais votos que o outro ou caso a quantidade de votos nulos ultrapasse $10\%$ do total de votos.* -->
+<!-- ::: column-margin -->
+<!-- ***Dica**: O percentual de votos nulos poderá ser obtido fazendo:* -->
+<!-- $$\frac{(votosNulos \times 100)}{(votosJoao + votosMaria + votosNulos)}$$ -->
+<!-- ::: -->
+<!-- ## Questão 3: -->
+<!-- *Um jogador de RPG (Role-Playing Game) está desenvolvendo um sistema para calcular o dano causado por um ataque com uma espada. O sistema deve considerar a força do personagem e a defesa do inimigo para calcular o dano final. A fórmula para calcular o dano encontra-se ao lado.* -->
+<!-- ::: column-margin -->
+<!-- *O **dano** é obtido por:* -->
+<!-- $$dano = (forca - defesa) * 10$$  -->
+<!-- ::: -->
+<!-- *Se o resultado da fórmula for negativo, o dano final deve ser considerado como zero. Além disso, caso a força seja maior que a defesa, o ataque deve ser considerado como um golpe crítico e o dano final deve ser dobrado. O jogador precisa desenvolver um programa em C que recebe a força e a defesa como entrada e exibe os valores de força e defesa informados, além do dano final.* -->
+<!-- ## Questão 4: -->
+<!-- Um professor de matemática está desenvolvendo um programa para ajudar seus alunos a praticar cálculo de área de figuras geométricas. O programa deve receber como entrada o tipo de figura, da seguinte forma: -->
+<!-- + `q` ou `Q` para quadrado; -->
+<!-- + `r` ou `R` para retângulo; -->
+<!-- + `c` ou `C` para circunferência. -->
+<!-- ::: column-margin -->
+<!-- A área das figuras podem ser calculadas por: -->
+<!-- + **Quadrado**: $A = l^2$; -->
+<!-- + **Retângulo**: $A = b * h$, em que $b$ é a base e $h$ é a altura; -->
+<!-- + **Circunferência**: $A = \pi * r^2$, em que $r$ é o raio. -->
+<!-- ::: -->
+<!-- Se informado o quadrado e o retângulo, o programa deve receber a medida do lado ou dos lados. Para o círculo, o programa deve receber o raio. O programa deve calcular a área da figura de acordo com o tipo informado e exibir o resultado na tela. -->
+<!-- ## Questão 5: -->
+<!-- *Escreva um programa que leia as medidas dos lados de um triângulo e -->
+<!-- escreva se ele é Equilátero, Isósceles ou Escaleno. Sendo que:* -->
+<!-- + ***Triângulo Equilátero**: possui os 3 lados iguais;* -->
+<!-- + ***Triângulo Isóscele**: possui 2 lados iguais;* -->
+<!-- + ***Triângulo Escaleno**: possui 3 lados diferentes.* -->
 </section>
 
 </main>
