@@ -96,6 +96,6 @@ Utilizando a função `rand()` da biblioteca `stdlib.h`, implemente a função `
 
 Implemente duas funções, `long unsigned int revursiva_fib(long unsigned int n)` e `long unsigned int loop_fib(long unsigned int n)`, que retornam o n-ésimo termo da sequência de Fibonacci. Lembre-se que a sequência de Fibonacci é dada por:
 
-$1, 1, 2, 3, 5, 8, 13, \cdots.$
+$$1, 1, 2, 3, 5, 8, 13, \cdots.$$
 
 Por exemplo, `recursiva_fib(6)` e `loop_fib(6)` deverão retornar o número 8, pois 8 é o sexto termo da sequência.
