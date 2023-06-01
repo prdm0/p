@@ -1,0 +1,101 @@
+---
+title: |
+  | Universidade Federal da Paraíba
+  | Centro de Ciências Exatas e da Natureza
+  | Departamento de Estatística
+abstract-title: "Instruções"
+abstract: 
+  Prezado discente, ao final da avaliação, você deverá enviar o código C para o
+  o email [**pedro.rafael.marinho@gmail.com**](mailto:pedro.rafael.mariho@gmail.com). No título do email deverá constar o seu nome
+  e sua matrícula. 
+  
+  No script, as respostas devem estar identificando bem as questões. Todos os comentários
+  deverão ser feitos utilizando comentários válidos em C, i.e., deverão utilizar `/**/`. 
+  
+subtitle: |
+  | **1108194 - PROGRAMAÇÃO APLICADA À ESTATÍSTICA**
+  | (Terceira Avaliação)
+author: "**Prof. Dr. Pedro Rafael D. Marinho**"
+date: today
+date-format: "02/06/2023"
+lang: pt
+language: 
+  title-block-author-single: "Professor"
+  title-block-published: "Data da Avaliação"
+format:
+  html:
+    code-link: true
+    toc: true
+    number-sections: false
+    code-copy: true
+    html-math-method: katex
+    self-contained: true
+    code-tools:
+      source: false
+      toggle: false
+      caption: none
+reference-location: margin
+citation-location: margin
+---
+
+<!-- ::: callout-note -->
+<!-- Você poderá utilizar o conceito de funções, quando achar necessário. Lembre-se, uma função em C é construida como: -->
+
+<!-- ```{.c} -->
+<!-- tipo_de_retorno nome_da_funcao(tipo x, tipo y){ -->
+
+<!--   coinjunto de instrucoes -->
+
+<!--   return(alguma_coisa) -->
+<!-- } -->
+<!-- ```  -->
+
+<!-- Por exemplo, a função `soma_3()` retorna uma número do tipo `double` e recebe três argumentos do tipo `double`, a saber, -->
+<!-- os argumentos `x`, `y` e `z`. -->
+
+<!-- ```{.c} -->
+
+<!-- double soma_tres(double x, double y, double z){ -->
+<!--     double conta; -->
+
+<!--     conta = x + y + z; -->
+
+<!--     return(conta); -->
+<!-- } -->
+
+<!-- ``` -->
+
+<!-- ::: -->
+
+## Questão 1:
+
+Implemente uma função em C, de nome `double aproxi_cosh(double x, long unsigned int num)`, que aproxima o cosseno hiperbólico de $x$, considerando a série de potência abaixo:
+
+$$\cosh(x) = \sum_{n = 0}^\infty \frac{x^{2n}}{(2n)!}.$$
+**Nota**: O argumento `num` consiste no número de termos a serem considerados na soma, uma vez que não podemos fazer soma de infinitos termos. Por exemplo, se `num = 5`, a aproximação irá considerar seis termos, uma vez que $n$ inicia-se em zero.
+
+## Questão 2:
+
+Implemente, uma função em C, de nome `double leibniz_pi(double x, unsigned long int num)`, **usando instruções de laço**, para aproximar o valor de $\pi$ usando a série de potência de Leibniz, dada por:
+
+$$\sum_{n = 0}^\infty = \frac{(-1)^n}{2n + 1} = 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \cdots = \frac{\pi}{4}.$$
+
+A função `leibniz_pi` deverá retornar um valor `double` e receberá dois argumentos, a saber, `x` que será e `num`. O argumento `num` deverá substituir $\infty$, uma vez que não poderemos somar infinitos termos. Por exemplo, se `num = 5`, a aproximação deverá aproximar com seis termos o valor de $\frac{\pi}{4}$, uma vez que $n$ inicia-se em zero. O retorno da função `leibniz_pi` deverá aproximar o valor de $\pi$.
+
+## Questão 3:
+
+Implemente a função `double leibniz_pi(double x, unsigned long int num)` utilizando **recursividade**. Lembre-se, considera-se recursividade em programação, a função que chama ela mesmo.
+
+
+## Questão 4: 
+
+Utilizando a função `rand()` da biblioteca `stdlib.h`, implemente a função `double prob_cara(unsigned long int n)` que simula o lançamento de `n` vezes de uma moeda não viesada. A função deverá retornar a probabilidade da moeda ser cara. Considere `0` como coroa e `1` como cara. Lembrando que, para geramos valores pseudo-aleatórios podendo ser `a` ou `b`, devemos fazer `a + rand()%b`.
+
+
+## Questão 5:
+
+Implemente duas funções, `long unsigned int revursiva_fib(long unsigned int n)` e `long unsigned int loop_fib(long unsigned int n)`, que retornam o n-ésimo termo da sequência de Fibonacci. Lembre-se que a sequência de Fibonacci é dada por:
+
+$1, 1, 2, 3, 5, 8, 13, \cdots.$
+
+Por exemplo, `recursiva_fib(6)` e `loop_fib(6)` deverão retornar o número 8, pois 8 é o sexto termo da sequência.

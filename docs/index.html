@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.2.475">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Prof. Dr. Pedro Rafael D. Marinho">
-<meta name="dcterms.date" content="2023-05-05">
+<meta name="dcterms.date" content="2023-02-06">
 
-<title>quarto-input1f85f2e1</title>
+<title>quarto-inputb07e70fa</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -2594,7 +2594,7 @@ vertical-align: -.125em;
 Centro de Ciências Exatas e da Natureza<br>
 Departamento de Estatística</p></h1>
 <p class="subtitle lead"></p><p><strong>1108194 - PROGRAMAÇÃO APLICADA À ESTATÍSTICA</strong><br>
-(Segunda Avaliação)</p><p></p>
+(Terceira Avaliação)</p><p></p>
 </div>
 
 
@@ -2611,7 +2611,7 @@ Departamento de Estatística</p></h1>
     <div>
     <div class="quarto-title-meta-heading">Data da Avaliação</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">05/05/2023</p>
+      <p class="date">02/06/2023</p>
     </div>
   </div>
   
@@ -2647,83 +2647,28 @@ Departamento de Estatística</p></h1>
 <!-- ::: -->
 <section id="questão-1" class="level2">
 <h2 class="anchored" data-anchor-id="questão-1">Questão 1:</h2>
-<p>Utilizando o conceito de laços/loops, crie um código C que calcula o fatorial de um número inteiro. Considere um inteiro assinado da forma <code>unsigned long int</code>. Lembre-se que o fatorial de <span class="math inline">n</span> é dado por:</p>
-<p><span class="math display">n! = n \times (n - 1) \times (n - 2) \times \cdots \times 1,</span> em que <span class="math inline">0! = 1</span>.</p>
+<p>Implemente uma função em C, de nome <code>double aproxi_cosh(double x, long unsigned int num)</code>, que aproxima o cosseno hiperbólico de <span class="math inline">x</span>, considerando a série de potência abaixo:</p>
+<p><span class="math display">\cosh(x) = \sum_{n = 0}^\infty \frac{x^{2n}}{(2n)!}.</span> <strong>Nota</strong>: O argumento <code>num</code> consiste no número de termos a serem considerados na soma, uma vez que não podemos fazer soma de infinitos termos. Por exemplo, se <code>num = 5</code>, a aproximação irá considerar seis termos, uma vez que <span class="math inline">n</span> inicia-se em zero.</p>
 </section>
 <section id="questão-2" class="level2">
 <h2 class="anchored" data-anchor-id="questão-2">Questão 2:</h2>
-<p>Utilizando o conceito de laços, crie um programa em C que some apenas os números pares da sequência de números inteiros de 1 à 100.</p>
+<p>Implemente, uma função em C, de nome <code>double leibniz_pi(double x, unsigned long int num)</code>, <strong>usando instruções de laço</strong>, para aproximar o valor de <span class="math inline">\pi</span> usando a série de potência de Leibniz, dada por:</p>
+<p><span class="math display">\sum_{n = 0}^\infty = \frac{(-1)^n}{2n + 1} = 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \cdots = \frac{\pi}{4}.</span></p>
+<p>A função <code>leibniz_pi</code> deverá retornar um valor <code>double</code> e receberá dois argumentos, a saber, <code>x</code> que será e <code>num</code>. O argumento <code>num</code> deverá substituir <span class="math inline">\infty</span>, uma vez que não poderemos somar infinitos termos. Por exemplo, se <code>num = 5</code>, a aproximação deverá aproximar com seis termos o valor de <span class="math inline">\frac{\pi}{4}</span>, uma vez que <span class="math inline">n</span> inicia-se em zero. O retorno da função <code>leibniz_pi</code> deverá aproximar o valor de <span class="math inline">\pi</span>.</p>
 </section>
 <section id="questão-3" class="level2">
 <h2 class="anchored" data-anchor-id="questão-3">Questão 3:</h2>
-<p>Utilizando o conceito de laços, crie um código C que dado um valor de <span class="math inline">n</span> (número de linhas da árvore), o código retornará:</p>
-<p>Para <code>n = 1</code>:</p>
-<pre><code>*</code></pre>
-<p>Para <code>n = 2</code>:</p>
-<pre><code>*
-*-</code></pre>
-<p>Para <code>n = 3</code>:</p>
-<pre><code>*
-*-
-*-*</code></pre>
-<p>O código deverá seguir esse padrão, para todo valor de <code>n</code>. Por exemplo, se <code>n = 10</code>, o código deverá retornar:</p>
-<pre><code>*
-*-
-*-*
-*-*-
-*-*-*
-*-*-*-
-*-*-*-*
-*-*-*-*-
-*-*-*-*-*
-*-*-*-*-*-</code></pre>
+<p>Implemente a função <code>double leibniz_pi(double x, unsigned long int num)</code> utilizando <strong>recursividade</strong>. Lembre-se, considera-se recursividade em programação, a função que chama ela mesmo.</p>
 </section>
 <section id="questão-4" class="level2">
 <h2 class="anchored" data-anchor-id="questão-4">Questão 4:</h2>
-<p>Utilizando o conceito de laços, escreva um programa em C que aproxime o valor de <span class="math inline">\mathrm{sin}(x)</span>, utilizando a série de potência baixo:</p>
-<p><span class="math display">\mathrm{sin}(x)  \approx \sum_{n = 0}^{N} \frac{(-1)^nx^{2n + 1}}{(2n + 1)!}.</span> <strong>Nota</strong>: Você deverá escolher um valor de <span class="math inline">N</span>, por exemplo, <span class="math inline">N = 5</span>. Não escolha um valor grande para <span class="math inline">N</span>, para não cair em erros numéricos! Aqui, suficiente uma aproximação com seis termos; <span class="math inline">n = 0, 1, 2, 3, 4, 5</span>.</p>
+<p>Utilizando a função <code>rand()</code> da biblioteca <code>stdlib.h</code>, implemente a função <code>double prob_cara(unsigned long int n)</code> que simula o lançamento de <code>n</code> vezes de uma moeda não viesada. A função deverá retornar a probabilidade da moeda ser cara. Considere <code>0</code> como coroa e <code>1</code> como cara. Lembrando que, para geramos valores pseudo-aleatórios podendo ser <code>a</code> ou <code>b</code>, devemos fazer <code>a + rand()%b</code>.</p>
 </section>
 <section id="questão-5" class="level2">
 <h2 class="anchored" data-anchor-id="questão-5">Questão 5:</h2>
-<p>Escreva um programa em C, utilizando o conceito de laços, em que solicite ao usuário uma quantidade <span class="math inline">n</span> de números reais que serão digitados. Em cada iteração do laço, o programa deverá solicitar um número real ao usuário. Ao fim das <span class="math inline">n</span> iterações, o programa deverá informar a soma dos números digitados.</p>
-<!-- *Escreva um programa em C que solicite três notas de um aluno e informe a média das três avaliações. Além disso, o programa deverá informar se o aluno foi aprovado, reprovado ou terá direito a fazer uma prova final. Em caso do aluno ir para final, informe quanto ele deverá obter na final para se considerar -->
-<!-- aprovado na disciplina. **Regra**: O aluno será considerado aprovado se tiver a média aritmética das três avaliações maior ou igual à sete. Se a média for menor que 4, o aluno será reprovado sem o direito de fazer o exame final. Já no caso da média aritmética esteja no intervalo $[4,7)$ o aluno poderá fazer um exame final. Nessa última situação, a nota final assumirá peso 4 e a média aritmética das três primeiras avaliações assumirá o peso 6. Se o aluno obter uma média ponderada maior ou igual à 5.0 ele estará aprovado.* -->
-<!-- ## Questão 2: -->
-<!-- *Imagine que você está escrevendo um programa para uma loja que vende camisetas. Cada camiseta tem um preço base, mas o preço final pode variar dependendo do tamanho da camiseta. As camisetas tamanho P têm um desconto de $10\%$ no preço, as camisetas tamanho M têm um desconto de $5\%$ e as camisetas tamanho G não têm desconto. Escreva um programa em C que leia o tamanho da camiseta e o preço base da mesma (preço sem desconto). Em seguida, o programa deve calcular o preço final da camiseta, levando em consideração o desconto de acordo com o tamanho da camiseta. O programa deverá imprimir em tela o preço base, o tamanho da camiseta e o valor final.* -->
-<!-- ## Questão 3: -->
-<!-- *Você está desenvolvendo um sistema de votação para uma eleição municipal e precisa implementar a lógica de contagem de votos para determinar o resultado final. Nas eleições, existem apenas dois candidatos, a saber João e Maria. Seu programa deverá solicitar o número de votos de João, o número de votos de Maria e o número de votos nulos. O programa deverá retornar as informações preenchidas e o resultado do primeiro turno, que poderá ser:* -->
-<!-- 1. *`Resultado: Joao venceu a eleicao!` - caso o candidato João tenha recebido mais votos que a candidata Maria e que a quantidade de votos nulos não ultrapasse $10\%$ do total de votos;* -->
-<!-- 2. *`Resultado: Maria venceu a eleicao!` - caso a candidata Maria tenha recebido mais votos que o candidato João e que a quantidade de votos nulos não ultrapasse $10\%$ do total de votos;* -->
-<!-- 3. *`Resultado: Haverá segundo turno!` - caso nenhum dos candidatos tenha recebido mais votos que o outro ou caso a quantidade de votos nulos ultrapasse $10\%$ do total de votos.* -->
-<!-- ::: column-margin -->
-<!-- ***Dica**: O percentual de votos nulos poderá ser obtido fazendo:* -->
-<!-- $$\frac{(votosNulos \times 100)}{(votosJoao + votosMaria + votosNulos)}$$ -->
-<!-- ::: -->
-<!-- ## Questão 3: -->
-<!-- *Um jogador de RPG (Role-Playing Game) está desenvolvendo um sistema para calcular o dano causado por um ataque com uma espada. O sistema deve considerar a força do personagem e a defesa do inimigo para calcular o dano final. A fórmula para calcular o dano encontra-se ao lado.* -->
-<!-- ::: column-margin -->
-<!-- *O **dano** é obtido por:* -->
-<!-- $$dano = (forca - defesa) * 10$$  -->
-<!-- ::: -->
-<!-- *Se o resultado da fórmula for negativo, o dano final deve ser considerado como zero. Além disso, caso a força seja maior que a defesa, o ataque deve ser considerado como um golpe crítico e o dano final deve ser dobrado. O jogador precisa desenvolver um programa em C que recebe a força e a defesa como entrada e exibe os valores de força e defesa informados, além do dano final.* -->
-<!-- ## Questão 4: -->
-<!-- Um professor de matemática está desenvolvendo um programa para ajudar seus alunos a praticar cálculo de área de figuras geométricas. O programa deve receber como entrada o tipo de figura, da seguinte forma: -->
-<!-- + `q` ou `Q` para quadrado; -->
-<!-- + `r` ou `R` para retângulo; -->
-<!-- + `c` ou `C` para circunferência. -->
-<!-- ::: column-margin -->
-<!-- A área das figuras podem ser calculadas por: -->
-<!-- + **Quadrado**: $A = l^2$; -->
-<!-- + **Retângulo**: $A = b * h$, em que $b$ é a base e $h$ é a altura; -->
-<!-- + **Circunferência**: $A = \pi * r^2$, em que $r$ é o raio. -->
-<!-- ::: -->
-<!-- Se informado o quadrado e o retângulo, o programa deve receber a medida do lado ou dos lados. Para o círculo, o programa deve receber o raio. O programa deve calcular a área da figura de acordo com o tipo informado e exibir o resultado na tela. -->
-<!-- ## Questão 5: -->
-<!-- *Escreva um programa que leia as medidas dos lados de um triângulo e -->
-<!-- escreva se ele é Equilátero, Isósceles ou Escaleno. Sendo que:* -->
-<!-- + ***Triângulo Equilátero**: possui os 3 lados iguais;* -->
-<!-- + ***Triângulo Isóscele**: possui 2 lados iguais;* -->
-<!-- + ***Triângulo Escaleno**: possui 3 lados diferentes.* -->
+<p>Implemente duas funções, <code>long unsigned int revursiva_fib(long unsigned int n)</code> e <code>long unsigned int loop_fib(long unsigned int n)</code>, que retornam o n-ésimo termo da sequência de Fibonacci. Lembre-se que a sequência de Fibonacci é dada por:</p>
+<p><span class="math inline">1, 1, 2, 3, 5, 8, 13, \cdots.</span></p>
+<p>Por exemplo, <code>recursiva_fib(6)</code> e <code>loop_fib(6)</code> deverão retornar o número 8, pois 8 é o sexto termo da sequência.</p>
 </section>
 
 </main>
