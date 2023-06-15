@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.2.475">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Prof.&nbsp;Dr.&nbsp;Pedro Rafael D. Marinho">
 
-<title>quarto-input38a8e2f2</title>
+<title>quarto-inputb2fe7d3c</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -98,22 +98,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
 
 </head>
 
@@ -141,7 +125,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 Centro de Ciências Exatas e da Natureza<br>
 Departamento de Estatística</p></h1>
 <p class="subtitle lead"></p><p><strong>GDEST0105 - PROGRAMAÇÃO ESTATÍSTICA COM PYTHON</strong><br>
-(Segunda Avaliação)</p><p></p>
+(Reposição - Primeira Avaliação)</p><p></p>
 </div>
 
 
@@ -149,7 +133,7 @@ Departamento de Estatística</p></h1>
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Professor Dr</div>
+    <div class="quarto-title-meta-heading">Professor</div>
     <div class="quarto-title-meta-contents">
              <p><strong>Prof.&nbsp;Dr.&nbsp;Pedro Rafael D. Marinho</strong> </p>
           </div>
@@ -158,7 +142,7 @@ Departamento de Estatística</p></h1>
     <div>
     <div class="quarto-title-meta-heading">Data da Avaliação</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">26/04/2023</p>
+      <p class="date">15/06/2023</p>
     </div>
   </div>
   
@@ -174,112 +158,94 @@ Departamento de Estatística</p></h1>
 
 </header>
 
-<div class="callout-note callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Definindo uma função em Python
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Uma função em Python poderá ser definida por:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> nome_da_funcao(parametros):</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  corpo da função</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Por exemplo, a função <code>soma_2</code>, que recebe dois argumentos e retorna sua soma poderá ser implementada como:</p>
-<div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> soma_2(x, y):</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span>(x <span class="op">+</span> y)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Usando a função</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>soma_2(<span class="dv">2</span>,<span class="dv">5</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="14">
-<pre><code>7</code></pre>
-</div>
-</div>
-<p><strong>Nota</strong>: Você agora sabe definir uma função em Python e poderá implementar as questões em forma de funções. Note a identação do código para definir o corpo da função. Identação é algo muito importante em Python!</p>
-</div>
-</div>
+<!-- ::: callout-note -->
+<!-- # Algumas observações importantes -->
+<!-- \ -->
+<!-- As soluções que fiz usam unica e exclusivamente conceitos de estruturas de dados de R e funções que encontram-se nos slides. Por motivos óbvios, isso em nada impede que você escolha em utilizar outros conceitos que foram ministrados em sala de aula.\ -->
+<!-- \ -->
+<!-- Além disso, as soluções que fiz não são as melhores soluções. Existe formas mais elegantes de resolver os problemas. Porém, a ideia aqui é utilizar os conceitos congruentes aos assuntos da primeira avaliação. -->
+<!-- 1.  O operador `|>` (operador de pipe) que utilizo nas soluções não são condições necessárias para resolver as questões de prova. Onde tiver `obj |> funcao()` você poderá substituir por `funcao(obj)`; -->
+<!-- 2.  A biblioteca `dplyr` que é carregada, por exemplo, na questão 5, onde sugiro que seja feito `library(dplyr)` não era objeto de estudo, i.e., você para resolver as questões não precisava conhecer **NADA** da `dplyr`. O uso dela, aqui, se deve unica e exclusivamente para carregar o conjunto de dados `starwars`. Porém, soluções que utilizaram o `dplyr` são aceitas, haja vista que falei sobre esse pacote em sala de aula; -->
+<!-- 3.  Sugiro fortemente que estudem as soluções. -->
+<!-- ::: -->
 <section id="questão-1" class="level2">
 <h2 class="anchored" data-anchor-id="questão-1">Questão 1:</h2>
-<p><em>Você foi contratado por uma empresa de vendas online para criar uma função em Python que calcule o desconto a ser aplicado em um determinado produto, com base no seu preço e na sua categoria. Implemente a função <code>politica_de_desconto(precos, categoria, politicas)</code>, em que os argumentos <code>precos</code>, <code>categoria</code> e <code>politicas</code> são, respectivamente, uma lista de preços, uma string informando uma categoria de produto (<code>"exemplo"</code>, <code>"roupa"</code>, <code>"calcado"</code>, <code>"decoracao"</code>, etc) e um dicionário com as políticas de descontos. O dicionário nas chaves terão os produtos da loja e como valores, os percentuais de descontos. Portanto, sua função deverá calcular o percentual de desconto sobre o argumento <code>preco</code>, com base no argumento <code>categoria</code> e dicionário, passados para a função.</em></p>
+<p><em>Considere os objetos nome, idade e salario, conforme abaixo:</em></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>nome <span class="op">=</span> <span class="st">"João da Silva"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>idade <span class="op">=</span> <span class="dv">38</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>salario <span class="op">=</span> <span class="fl">12500.37</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Utilizando <em>f-string</em> obtenha a saída abaixo:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Nome: [João da Silva<span class="op">+++++++</span>], Idade: [<span class="dv">00</span><span class="er">38</span>], Salário: [<span class="op">***</span><span class="fl">12500.370</span><span class="op">***</span>]</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="questão-2" class="level2">
 <h2 class="anchored" data-anchor-id="questão-2">Questão 2:</h2>
-<p><em>Imagine que você está desenvolvendo um sistema de gerenciamento de funcionários para uma empresa. Cada funcionário possui um nome, um salário e um departamento. A empresa deseja aplicar um bônus salarial para funcionários de determinados departamentos, de acordo com a seguinte política:</em></p>
-<ul>
-<li><em>Funcionários do departamento “Vendas” receberão um bônus de 10% sobre o seu salário.</em></li>
-<li><em>Funcionários do departamento “Marketing” receberão um bônus de 15% sobre o seu salário.</em></li>
-<li><em>Funcionários de outros departamentos não receberão bônus.</em></li>
-</ul>
-<p><em>Para implementar essa política, você deve criar uma função em Python chamada <code>calcular_bonus</code> que receba um dicionário contendo as informações de um funcionário (nome, salário e departamento) e retorne o novo salário do funcionário com o bônus aplicado.</em></p>
+<p><em>Com base na página 99 do material de aula, construa a classe <code>MinhaLista</code> de modo que o método <code>__sub__</code> retorne a diferença da média de duas listas</em>.</p>
 </section>
 <section id="questão-3" class="level2">
 <h2 class="anchored" data-anchor-id="questão-3">Questão 3:</h2>
-<p><em>Você recebeu um programa em Python que utiliza instruções <code>if</code> e <code>else</code> para verificar se uma pessoa é criança, adolescente ou adulto com base na idade e imprimir uma mensagem correspondente na tela. Porém, você precisa reescrever esse programa utilizando a instrução <code>elif</code>.</em></p>
-<p><em>O programa original é o seguinte:</em></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>idade <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Digite a idade da pessoa: "</span>))</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> idade <span class="op">&lt;</span> <span class="dv">13</span>:</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"A pessoa é criança."</span>)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> idade <span class="op">&lt;</span> <span class="dv">18</span>:</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"A pessoa é adolescente."</span>)</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"A pessoa é adulta."</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><em>Reescreva esse programa utilizando a instrução <code>elif</code> de forma que o resultado seja o mesmo.</em></p>
+<p><em>Escreva um código Python que utilize a compreensão de lista para criar uma nova lista chamada <code>squared_numbers</code>, que contém o quadrado de cada número na lista original <code>numbers</code>. Considere</em></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>, <span class="dv">36</span>, <span class="dv">49</span>, <span class="dv">64</span>, <span class="dv">81</span>, <span class="dv">100</span>, <span class="dv">121</span>, <span class="dv">144</span>, <span class="dv">169</span>, <span class="dv">196</span>, <span class="dv">225</span>, <span class="dv">256</span>, <span class="dv">289</span>, <span class="dv">324</span>, <span class="dv">361</span>, <span class="dv">400</span>]</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="questão-4" class="level2">
 <h2 class="anchored" data-anchor-id="questão-4">Questão 4:</h2>
-<p><em>Crie uma função em Python que, dada uma lista de números, informe se ela é simétrica ou não. Uma lista é considerada simétrica se os elementos da lista são iguais quando lidos da esquerda para a direita e da direita para a esquerda.</em></p>
-<p><em>Por exemplo, se a lista for <code>[1, 2, 3, 2, 1]</code>, o programa deve imprimir a mensagem <code>"A lista é simétrica"</code>. Já se a lista for <code>[1, 2, 3, 4, 5]</code>, o programa deve imprimir a mensagem <code>"A lista não é simétrica"</code>.</em></p>
-<p><strong>Dica</strong>: <em>Você pode usar a sintaxe de indexação <code>lista[::-1]</code> para criar uma lista com os elementos em ordem reversa.</em></p>
+<p><em>Escreva um programa em Python que retorne uma lista com apenas os métodos dunders (métodos mágicos) na lista <code>dir(list)</code></em>, em que:</p>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">dir</span>(<span class="bu">list</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="1">
+<pre><code>['__add__',
+ '__class__',
+ '__class_getitem__',
+ '__contains__',
+ '__delattr__',
+ '__delitem__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__getitem__',
+ '__gt__',
+ '__hash__',
+ '__iadd__',
+ '__imul__',
+ '__init__',
+ '__init_subclass__',
+ '__iter__',
+ '__le__',
+ '__len__',
+ '__lt__',
+ '__mul__',
+ '__ne__',
+ '__new__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__reversed__',
+ '__rmul__',
+ '__setattr__',
+ '__setitem__',
+ '__sizeof__',
+ '__str__',
+ '__subclasshook__',
+ 'append',
+ 'clear',
+ 'copy',
+ 'count',
+ 'extend',
+ 'index',
+ 'insert',
+ 'pop',
+ 'remove',
+ 'reverse',
+ 'sort']</code></pre>
+</div>
+</div>
 </section>
 <section id="questão-5" class="level2">
 <h2 class="anchored" data-anchor-id="questão-5">Questão 5:</h2>
-<p><em>Escreva um programa que calcule o preço a pagar pelo fornecimento de energia elétrica. Pergunte a quantidade de kWh consumida e o tipo de instalação: R (residencias), I (indústrias) e C (comércios). Calcule o preço a pagar de acordo a Tabela ao lado.</em></p>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Tipo</th>
-<th>Faixa (kWh)</th>
-<th>Preço</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Residencial</td>
-<td>Até 500</td>
-<td><span class="math inline">R\$\, 0,40</span></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Acima de 500</td>
-<td><span class="math inline">R\$\, 0,65</span></td>
-</tr>
-<tr class="odd">
-<td>Comercial</td>
-<td>Até 1000</td>
-<td><span class="math inline">R\$\, 0,55</span></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Acima de 1000</td>
-<td><span class="math inline">R\$\, 0,60</span></td>
-</tr>
-<tr class="odd">
-<td>Industrial</td>
-<td>Até 5000</td>
-<td><span class="math inline">R\$\, 0,55</span></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Acima de 5000</td>
-<td><span class="math inline">R\$\, 0,60</span></td>
-</tr>
-</tbody>
-</table>
+<p><em>Com base no objeto <code>string</code> abaixo, como obter o número de ocorrências do caractere <code>p</code>? Resolva de duas formas: (1) usando o método <code>count()</code> e (2) usando compreensões de lista</em></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>string <span class="op">=</span> <span class="st">"Eu amo programar em python. Um estatístico precisa saber programar!"</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 
 </main>

@@ -14,7 +14,7 @@ abstract:
   
 subtitle: |
   | **GDEST0105 - PROGRAMAÇÃO ESTATÍSTICA COM PYTHON**
-  | (Primeira Avaliação)
+  | (Reposição - Primeira Avaliação)
 author: "**Prof. Dr. Pedro Rafael D. Marinho**"
 date: today
 date-format: "D/MM/YYYY"
